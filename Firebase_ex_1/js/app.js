@@ -5,11 +5,11 @@
 					+ email
 					+ phoneNumber : kiểu number
  */
-const signupForm = document.getElementById('signup__form');
+let signupForm = document.getElementById('signup__form');
 signupForm.addEventListener("submit", function(event) {
     event.preventDefault();
 
-    const data = {
+    let data = {
         firstName: signupForm.firstName.value,
         lastName: signupForm.lastName.value,
         email: signupForm.email.value,
