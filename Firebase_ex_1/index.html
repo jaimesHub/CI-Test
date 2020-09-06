@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dương Quốc Khánh - Firebase - 1</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBRji-HwiCOUIY5FdkQ_CRfFYUseD8QPZ4",
+            authDomain: "fir-cijs48-ex.firebaseapp.com",
+            databaseURL: "https://fir-cijs48-ex.firebaseio.com",
+            projectId: "fir-cijs48-ex",
+            storageBucket: "fir-cijs48-ex.appspot.com",
+            messagingSenderId: "456260669805",
+            appId: "1:456260669805:web:fd51fcdfb19cd42ed10a64"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+
+<body>
+    <div class="signup">
+        <h2 class="signup__heading">Create account</h2>
+        <p class="signup__already">Already have an account? <a class="signup__link signup__link--underline" href="#">Sign In</a></p>
+        <form action="#" id="signup__form">
+            <div class="form__group form__group--2">
+                <input type="text" class="form__input" name="firstName" placeholder="First name">
+                <input type="text" class="form__input" name="lastName" placeholder="Last name">
+            </div>
+            <div class="form__group">
+                <input type="email" class="form__input" name="email" placeholder="Email">
+            </div>
+            <div class="form__group">
+                <input type="number" class="form__input" name="phoneNumber" placeholder="Phone Number">
+            </div>
+            <div class="form__group">
+                <button type="submit" class="form__submit">
+                    Sign Up <i class="fa fa-long-arrow-right"></i>
+                </button>
+            </div>
+            <div class="form_tos">
+                <input type="checkbox" name="" id="tos">
+                <label for="tos">I have read and agree to the <a href="#" class="signup__link">Term of Service</a></label>
+            </div>
+        </form>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
